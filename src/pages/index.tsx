@@ -10,7 +10,6 @@ import Quetion from "@/Components/quetion";
 import Footer from "@/Components/footer";
 import Loading from "@/Components/loading";
 import { useEffect, useState } from "react";
-import Header from "@/Components/header";
 const inter = Poppins({
   subsets: ["latin"],
   weight: "600"
@@ -32,7 +31,6 @@ export default function Home() {
   }
   return (
     <main className={`relative ${inter.className}  overflow-hidden`}>
-      <Header/>
      <HomeComponent/>
      <AboutUs/>
      <MySkill/>
