@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
     return (
-        <div className="mt-16 md:mt-0 h-80 bg-secondary flex items-center sm:px-16 ">
+        <div className="mt-16 md:mt-24 h-80 bg-[#CBD5F5] border-t-[#] flex items-center sm:px-16 ">
             <div className="flex flex-col gap-6 sm:gap-0 sm:flex-row justify-between">
                 <div className="flex flex-row sm:flex-col sm:justify-start justify-center gap-4 text-xl font-medium">
                     <Link href={"#"} className="text-xl font-medium">Home</Link>

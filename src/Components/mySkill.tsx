@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import TitleRotate from "./titleRotate";
+import { BsPersonCircle } from "react-icons/bs";
 import Link from "next/link";
 const MySkill = () => {
     return (
@@ -10,45 +11,34 @@ const MySkill = () => {
                 <p className="text-3xl min-[300px]:text-4xl md:text-6xl 2xl:text-8xl font-bold name-outline text-end absolute right-24 min-[300px]:right-20 md:right-[-1rem] 2xl:bottom-[-3rem] 2xl:right-[-5rem] bottom-[-1.6rem] min-[300px]:bottom-[-2rem] md:bottom-[-2.5rem] -z-10" data-aos="fade-left">Skill</p>
             </div>
             <div className=" flex items-center justify-center relative h-full">
-                <div className=" w-[40rem] rounded-full  flex items-center justify-center">
-                    <div className="md:h-96 min-[300px]:h-64 h-48 w-48 min-[300px]:w-64 md:w-96   rounded-full border-[0.3px] border-slate-700 z-10 relative flex justify-center items-center">
-                        <div className="flex justify-center flex-col items-center absolute right-[-1rem] min-[300px]:right-[-2rem] z-10 top-0">
-                            <Image src={"/ai.svg"} alt="ai" height={500} width={500} className="w-10 h-10 min-[300px]:w-16 min-[300px]:h-16 md:h-24 md:w-24" data-aos="fade-zoom-in"
-                                data-aos-easing="ease-in-back"
-                                data-aos-delay="300"
-                                data-aos-offset="0" />
-                            <p className="font-semibold text-[9px] min-[300px]:text-xs md:text-base name-outline">Adobe ilustrator</p>
+                <div className="p-3 bg-secondary w-2/3 h-4/5 rounded-3xl flex justify-center items-center shadow-2xl shadow-slate-600/75">
+                    <div className="w-full h-full bg-slate-100 rounded-2xl overflow-hidden ">
+                        <div className="bg-white w-full h-14 flex justify-between items-center">
+                            <p className="text-xl font-bold ml-5">GufronDev</p>
+                            <div className="flex gap-3 items-center">
+                                <div className="px-4 py-1 bg-secondary rounded-full cursor-pointer">
+                                    <p>Back end</p>
+                                </div>
+                                <div className="text-slate-400 cursor-pointer">
+                                    <p>Front end</p>
+                                </div>
+                                <div className="text-slate-400 cursor-pointer">
+                                    <p>Terminal</p>
+                                </div>
+                            </div>
+                            <div className="mr-5 cursor-pointer">
+                                <Link href={"/login"}>
+                                    <BsPersonCircle className="text-xl" />
+                                </Link>
+                            </div>
                         </div>
-                        <div className="flex justify-center flex-col items-center z-10 absolute bottom-[-2.5rem] min-[300px]:bottom-[-3rem] md:bottom-[-6rem]">
-                            <Image src={"/react.svg"} alt="ai" height={500} width={500} className="min-[300px]:w-16 w-12 h-12 min-[300px]:h-16 md:h-24 md:w-24" data-aos="fade-zoom-in"
-                                data-aos-easing="ease-in-back"
-                                data-aos-delay="300"
-                                data-aos-offset="0" />
-                            <p className="font-semibold min-[300px]:text-base text-xs name-outline">React js</p>
-                        </div>
-                        <div className="flex justify-center flex-col items-center z-10 absolute left-[-2rem] min-[300px]:left-[-3rem] ">
-                            <Image src={"/typescript.svg"} alt="ai" height={500} width={500} className="w-12 h-12 min-[300px]:w-16 min-[300px]:h-16 md:h-24 md:w-24" data-aos="fade-zoom-in"
-                                data-aos-easing="ease-in-back"
-                                data-aos-delay="300"
-                                data-aos-offset="0" />
-                            <p className="font-semibold text-xs min-[300px]:text-base name-outline">Typescript</p>
-                        </div>
-                        <div className="flex justify-center flex-col z-10 items-center absolute left-10 top-[-2rem] md:top-[-3rem]">
-                            <Image src={"/logo-next.svg"} alt="ai" height={500} width={500} className="min-[300px]:w-16 w-12 h-12 min-[300px]:h-16 md:h-24 md:w-24" data-aos="fade-zoom-in"
-                                data-aos-easing="ease-in-back"
-                                data-aos-delay="300"
-                                data-aos-offset="0" />
-                            <p className="font-semibold text-xs min-[300px]:text-base name-outline">Next Js</p>
-                        </div>
-                        <div className="flex justify-center z-10 flex-col items-center absolute right-[-1rem] min-[300px]:right-[-2rem] md:right-[-3rem] bottom-8 md:bottom-20">
-                            <Image src={"/tailwind.svg"} alt="ai" height={500} width={500} className="min-[300px]:w-16 w-12 h-12 min-[300px]:h-16 md:h-24 md:w-24" data-aos="fade-zoom-in"
-                                data-aos-easing="ease-in-back"
-                                data-aos-delay="300"
-                                data-aos-offset="0" />
-                            <p className="font-semibold text-xs min-[300px]:text-base name-outline">Tailwind</p>
-                        </div>
-                        <div className="w-12 h-12 min-[300px]:h-24 min-[300px]:w-24 md:w-40 md:h-40 bg-secondary rounded-full flex items-center justify-center">
-                            <div className="md:w-20 min-[300px]:w-9 w-3 h-3 min-[300px]:h-9 md:h-20 rounded-full bg-white" />
+                        <div className="flex justify-end h-full">
+                            <div className="w-28 h-full bg-slate-300 flex justify-start items-start flex-col">
+                                <Image src={"/next.svg"} alt="skill" height={500} width={500} className="w-full p-5" />
+                                <Image src={"/react.svg"} alt="skill" height={500} width={500} className="w-full p-5" />
+                                <Image src={"/typescript.svg"} alt="skill" height={500} width={500} className="w-full p-5" />
+                                <Image src={"/tailwind.svg"} alt="skill" height={500} width={500} className="w-full p-5" />
+                            </div>
                         </div>
                     </div>
                 </div>
